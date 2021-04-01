@@ -59,5 +59,23 @@ def love():
                 self.clear_screen()
                 self.insert_screen(answer,newline = true)
                 elif text == u"\u232B":
-                  
-      
+                  self.clear_screen()
+                  else:
+                    self.insert_screen(text)
+                    
+                    def clear_screen(self):
+                      self.equation = ''
+                      self.screen.configure(state = 'normal')
+                      self.screen.delete('1.0', END)
+                      
+                      def insert_screen(self, value, newline = False):
+                        self.screen.configure(state = 'normal')
+                        self.screen.insert(END, value)
+                        self.equation += str(value)
+                        self.screen.configure(state = disabled)
+                        
+                root = Tk()
+                my_gui = calculator(root)
+                root.mainloop()
+              
+      love()
