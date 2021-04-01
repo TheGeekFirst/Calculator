@@ -1,3 +1,3 @@
 # Calculator
 
-made calculator by python programming language
+made calculator by  programming language
