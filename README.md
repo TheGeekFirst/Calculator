@@ -1,3 +1,3 @@
 # Calculator
 
-made calculator by  programming language
+This is a simple calculator
